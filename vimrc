@@ -45,6 +45,12 @@ nnoremap Q <NOP>
 " Same for K.
 nnoremap K <NOP>
 
+" # Insert mode mappings:
+
+" Exit insert mode with 'ii'
+imap ii <esc>
+
+" # <leader> mappings:
 nmap     <leader>a :set wrap!<CR>
 nmap     <leader>c :close<CR>
 " Echo the full path of the current file:
