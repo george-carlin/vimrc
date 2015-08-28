@@ -100,8 +100,24 @@ endif
 "        PLUGINS
 " -----------------------
 
+" ------ CtrlP ------
+
+"  - https://github.com/kien/ctrlp.vim
+"  - https://kien.github.io/ctrlp.vim/#installation
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Ignore certain files in CtrlP:
+set wildignore+=*.swp,*.zip,*.mp3,*.ogg,*/.git/*,*.jpg,*.jpeg,*.png,*.gif,*/bin/*,*.woff,*.ttf,*.svg,*.eot,*.otf,*.ico,*/public/system*,*/tmp/*,*/doc/*,*/js_doc/*,*node_modules*
+let g:ctrlp_custom_ignore = {
+  \  'dir':  '\v(\.git$\|\.yardoc\|public\/system|bin$\|log$\|node_modules|bower_components)$',
+  \  'file': '\v(\.so$\|\.dat$|\.DS_Store$|\.mp3$|\.ogg$|\.jpg$|\.jpeg$|\.png$|\.gif|\.woff|\.ttf|\.svg|\.eot|\.otf|\.ico|\.log$)'
+  \ }
+
+" ------ Other -------
+
 " Activate pathogen - https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+
 
 " -----------------------
 "        MISC
