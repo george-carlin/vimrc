@@ -43,10 +43,15 @@ syntax on
 " map vs noremap are explained here: http://stackoverflow.com/a/3776182/1603071
 " Remember: `remap` is a SETTING. `map` and `noremap` are COMMANDS.
 
+" # Normal mode mappings:
+
 " Turn off Q so it stops fucking putting me in Ex mode!
 nnoremap Q <NOP>
 " Same for K.
 nnoremap K <NOP>
+" Increase/decrease split window height:
+nnoremap _ <C-w>-
+nnoremap + <C-w>+
 
 " # Insert mode mappings:
 
