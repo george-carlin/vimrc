@@ -127,3 +127,15 @@ execute pathogen#infect()
 " http://stackoverflow.com/q/2447109/1603071
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+
+" if not vimdiff:
+if &diff
+else
+  " Automatically vsplit the windows when vim opens
+  autocmd VimEnter * wincmd l
+  autocmd VimEnter * wincmd v
+  " The above messes up the backspace key, this fixes it (dunno why):
+  " (See http://stackoverflow.com/questions/9701366/)
+  imap ^? ^H
+end
