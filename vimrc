@@ -23,6 +23,8 @@ set autoindent
 set nocin
 " Turn off automatic comment insertion
 set formatoptions=ql
+" I added this at some point, but I'm not sure what it actually does :/
+set lbr
 " Put swp files in this directory so they don't clutter up the working
 " directory and cause problems (see e.g. this issue I was having with
 " Ember CLI: https://github.com/broccolijs/broccoli/issues/94)
