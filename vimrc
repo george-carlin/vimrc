@@ -85,17 +85,6 @@ let @u = '/[A-Z0-9]/i_l~'
 let @w = ':%s /\s\+$//'
 let @y = ':set tabstop=4:set softtabstop=4:set shiftwidth=4'
 
-" See http://stackoverflow.com/questions/5477565
-" Note 23rd Oct 2014... I just had issues with Vietnamese characters that were
-" solved by running `set termencoding=utf-8`. Don't have time now to
-" investigate further, but it may be worth setting this as a global setting.
-if has("multi_byte")
-  if &termencoding == ""
-    let &termencoding = &encoding
-  endif
-  set encoding=utf-8            " better default than latin1
-  setglobal fileencoding=utf-8  " change default file encoding when writing new files
-endif
 " -----------------------
 "        PLUGINS
 " -----------------------
@@ -139,3 +128,16 @@ else
   " (See http://stackoverflow.com/questions/9701366/)
   imap ^? ^H
 end
+
+
+" See http://stackoverflow.com/questions/5477565
+" Note 23rd Oct 2014... I just had issues with Vietnamese characters that were
+" solved by running `set termencoding=utf-8`. Don't have time now to
+" investigate further, but it may be worth setting this as a global setting.
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8            " better default than latin1
+  setglobal fileencoding=utf-8  " change default file encoding when writing new files
+endif
