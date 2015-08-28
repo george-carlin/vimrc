@@ -1,5 +1,3 @@
 #!/bin/sh
 cp ../.vimrc ./vimrc
 cp -r ../.vim ./dotvim
-git add --all
-git commit
