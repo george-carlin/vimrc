@@ -5,26 +5,27 @@ colorscheme jellybeans
 "        SETTINGS
 " -----------------------
 
-" Enable the mouse:
-set mouse=a
-" show line numbers
-set number
-" Insert spaces when the tab key is pressed.
-set expandtab
-" 1 tab = 2 spaces
-set tabstop=2
-" backspace deletes whole tab
-set softtabstop=2
-" <, > etc shift by 2 spaces
-set shiftwidth=2
 " auto-indent on
 set autoindent
-" no C-style indenting
-set nocin
+" Insert spaces when the tab key is pressed.
+set expandtab
 " Turn off automatic comment insertion
 set formatoptions=ql
 " I added this at some point, but I'm not sure what it actually does :/
 set lbr
+" Enable the mouse:
+set mouse=a
+" no C-style indenting
+set nocin
+" show line numbers
+set number
+" <, > etc shift by 2 spaces
+set shiftwidth=2
+" backspace deletes whole tab
+set softtabstop=2
+" 1 tab = 2 spaces
+set tabstop=2
+
 " Put swp files in this directory so they don't clutter up the working
 " directory and cause problems (see e.g. this issue I was having with
 " Ember CLI: https://github.com/broccolijs/broccoli/issues/94)
