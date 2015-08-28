@@ -70,10 +70,6 @@ nmap     <leader>w :w<CR>
 nmap     <leader>+ 50+
 nmap     <leader>_ 50_
 
-" -----------------------
-"        MACROS
-" -----------------------
-
 let @c = ':w !pbcopy'
 let @d = 'df"'
 " Go to 80th column
@@ -100,3 +96,12 @@ if has("multi_byte")
   set encoding=utf-8            " better default than latin1
   setglobal fileencoding=utf-8  " change default file encoding when writing new files
 endif
+
+" -----------------------
+"        MISC
+" -----------------------
+
+" Highlight columns past 80 characters. From
+" http://stackoverflow.com/q/2447109/1603071
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
