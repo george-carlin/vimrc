@@ -1,4 +1,2 @@
 #!/bin/sh
 cp ../.vimrc ./vimrc
-cp -r ../.vim .
-mv .vim dotvim
