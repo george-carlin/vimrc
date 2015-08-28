@@ -116,6 +116,10 @@ let g:ctrlp_custom_ignore = {
 " Activate pathogen - https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
+" Treat `do ... end`, `if ... end" etc as brackets
+" Note that matchit.vim is included in the standard vim distribution, it just
+" needs to be activated by this line.
+runtime macros/matchit.vim
 
 " -----------------------
 "        MISC
