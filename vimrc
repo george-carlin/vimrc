@@ -96,6 +96,12 @@ if has("multi_byte")
   set encoding=utf-8            " better default than latin1
   setglobal fileencoding=utf-8  " change default file encoding when writing new files
 endif
+" -----------------------
+"        PLUGINS
+" -----------------------
+
+" Activate pathogen - https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
 
 " -----------------------
 "        MISC
