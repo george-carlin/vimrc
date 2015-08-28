@@ -11,12 +11,12 @@ set mouse=a
 set number
 " Insert spaces when the tab key is pressed.
 set expandtab
-" 1 tab = 4 spaces
-set tabstop=4
+" 1 tab = 2 spaces
+set tabstop=2
 " backspace deletes whole tab
-set softtabstop=4
-" <, > etc shift by 4 spaces
-set shiftwidth=4
+set softtabstop=2
+" <, > etc shift by 2 spaces
+set shiftwidth=2
 " auto-indent on
 set autoindent
 " no C-style indenting
