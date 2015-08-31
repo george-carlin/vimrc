@@ -12,6 +12,9 @@ set autoindent
 set backspace=indent,eol,start
 " Insert spaces when the tab key is pressed.
 set expandtab
+"
+set foldmethod=indent
+set foldlevel=99999
 " Turn off automatic comment insertion
 set formatoptions=ql
 " I added this at some point, but I'm not sure what it actually does :/
