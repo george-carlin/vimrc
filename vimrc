@@ -5,6 +5,9 @@ colorscheme jellybeans
 "        SETTINGS
 " -----------------------
 
+filetype plugin on
+filetype plugin indent on
+
 " auto-indent on
 set autoindent
 " fix issue where backspace wasn't working in some situations
