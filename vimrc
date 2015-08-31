@@ -7,6 +7,9 @@ colorscheme jellybeans
 
 " auto-indent on
 set autoindent
+" fix issue where backspace wasn't working in some situations
+" See http://vim.wikia.com/wiki/Backspace_and_delete_problems
+set backspace=indent,eol,start
 " Insert spaces when the tab key is pressed.
 set expandtab
 " Turn off automatic comment insertion
