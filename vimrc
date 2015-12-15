@@ -8,6 +8,7 @@ colorscheme jellybeans
 filetype plugin on
 filetype plugin indent on
 
+
 " auto-indent on
 set autoindent
 " fix issue where backspace wasn't working in some situations
@@ -107,6 +108,13 @@ let @u = '/[A-Z0-9]/i_l~'
 " Remove all trailing whitespace from the current file:
 let @w = ':%s /\s\+$//'
 let @y = ':set tabstop=4:set softtabstop=4:set shiftwidth=4'
+
+" -----------------------
+"    FILETYPE-SPECIFIC
+" -----------------------
+
+" Set the default shiftwidth for javascript files to 2
+" autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 " -----------------------
 "        PLUGINS
