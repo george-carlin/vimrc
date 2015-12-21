@@ -176,3 +176,7 @@ if has("multi_byte")
   set encoding=utf-8            " better default than latin1
   setglobal fileencoding=utf-8  " change default file encoding when writing new files
 endif
+
+if has("autocmd")
+  au  BufNewFile,BufRead *.html,*.spacebars,*.mustache,*.handlebars,*.hbs,*.hogan,*.hulk,*.hjs set filetype=spacebars syntax=spacebars | runtime! ftplugin/spacebars.vim ftplugin/spacebars*.vim ftplugin/spacebars/*.vim
+endif
