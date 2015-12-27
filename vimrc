@@ -76,6 +76,7 @@ nmap     <leader>fp :echo expand('%:p')<cr>
 " Open vimrc for editing!
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nmap     <leader>i :set autoindent!<CR>
+nmap     <leader>js :JSHint<CR>
 nmap     <leader>k :set formatoptions+=cro<CR>
 " Toggle show whitespace:
 nmap     <leader>l :set list!<CR>
@@ -180,3 +181,5 @@ endif
 if has("autocmd")
   au  BufNewFile,BufRead *.html,*.spacebars,*.mustache,*.handlebars,*.hbs,*.hogan,*.hulk,*.hjs set filetype=spacebars syntax=spacebars | runtime! ftplugin/spacebars.vim ftplugin/spacebars*.vim ftplugin/spacebars/*.vim
 endif
+
+let g:syntastic_javascript_checkers = ['eslint']
